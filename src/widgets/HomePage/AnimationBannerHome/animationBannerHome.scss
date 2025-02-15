@@ -1,0 +1,47 @@
+$backgroundItem: #c53720;
+$border: #c53720;
+
+.animation-banner-home__parent {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  &-items {
+    display: flex;
+    gap: 100px;
+    align-items: center;
+    height: 100%;
+    width: 140%;
+    padding: 65px 0;
+    border-top: $border solid 4px;
+    border-bottom: $border solid 4px;
+    animation: animateImages 30s linear infinite;
+    white-space: nowrap; 
+
+    img {
+      object-fit: contain;
+      transition: all 100ms ease;
+      cursor: pointer;
+      height: 100px;
+    }
+
+    img:hover {
+      color: $backgroundItem;
+      transform: rotate(5deg) scale(1.2);
+      height: 100px;
+    }
+    
+  }
+}
+
+@keyframes animateImages {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}

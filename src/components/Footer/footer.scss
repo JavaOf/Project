@@ -1,0 +1,107 @@
+$color: #ffffff;
+$colorTitle: #8c8484;
+$border: #c53720;
+$icon: #c53720;
+$background: #1e1e1e;
+
+.footer {
+  width: 100%;
+  height: 342px;
+  background-image: url("../../assets/images/footer.png");
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: overlay;
+  background-color: $background;
+  .footer__items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 45px;
+    &-navigation-links {
+      display: flex;
+      gap: 45px;
+      &-box {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        .link {
+          color: $color;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20.13px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+        span {
+          color: $colorTitle;
+          max-width: 200px;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 15.1px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+      }
+    }
+    &-contacts {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      &-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        a {
+          color: $color;
+          text-decoration: none;
+          font-size: 16px;
+          font-weight: 500;
+          line-height: 20.13px;
+          text-align: left;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+        }
+        span {
+          color: $icon;
+          font-size: 27px;
+        }
+        button {
+          width: 168px;
+          height: 40px;
+          border: solid 4px $border;
+          background-color: transparent;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 12px;
+          font-weight: 700;
+          line-height: 15.1px;
+          text-align: center;
+          text-underline-position: from-font;
+          text-decoration-skip-ink: none;
+          color: $color;
+          cursor: pointer;
+        }
+      }
+    }
+    &-information {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      p {
+        max-width: 200px;
+        color: $color;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 20.13px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+      }
+    }
+  }
+}
